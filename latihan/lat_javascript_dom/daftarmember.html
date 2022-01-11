@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bootstrap/style.css" />
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body onload="setup()">
+    <!-- buat tampilan form disini -->
+    <h4>Form Pendaftaran Anggota Baru</h4>
+    <form action="#">
+      <div class="row pb-1">
+        <label for="nama" class="col-md-2 form-label">Kode Pendaftaran</label>
+        <div class="col-md-3">
+          <input type="text" name="kode" id="kode" class="form-control" readonly />
+        </div>
+      </div>
+      <div class="row pb-1">
+        <label for="nama" class="col-md-2 form-label">Nama</label>
+        <div class="col-md-6">
+          <input type="text" name="nama" id="nama" class="form-control" />
+        </div>
+      </div>
+      <div class="row pb-1">
+        <label for="" class="col-md-2 form-label">Tempat/Tanggal lahir</label>
+        <div class="col-md-2">
+          <input type="text" name="tempatlahir" id="tempatlahir" class="form-control" />
+        </div>
+        <div class="col-md-3">
+          <input type="date" name="tgllahir" id="tgllahir" class="form-control" onchange="hitungumur(this.value)" />
+        </div>
+        <div class="col-md-1 pt-2">
+          <span id="tampilumur"></span>
+        </div>
+      </div>
+      <div class="row pb-1">
+        <label for="" class="col-md-2 form-label">Email</label>
+        <div class="col-md-6">
+          <input type="email" name="email" id="email" class="form-control" />
+        </div>
+      </div>
+      <div class="row pb-1">
+        <label for="" class="col-md-2 form-label">Jenis Kelamin</label>
+        <div class="col-md-6">
+          <span class="form-check">
+            <input class="form-check-input" type="radio" name="jk" id="jk" value="Perempuan" />
+            <label class="form-check-label" for="jk"> Perempuan </label>
+          </span>
+          <span class="form-check">
+            <input class="form-check-input" type="radio" name="jk" id="jk" value="Laki-laki" />
+            <label class="form-check-label" for="jk"> Laki-laki </label>
+          </span>
+        </div>
+      </div>
+      <div class="row pb-1">
+        <label for="alamat" class="col-md-2 form-label">Alamat</label>
+        <div class="col-md-6">
+          <textarea name="alamat" id="alamat" cols="70" rows="2" class="form-control"></textarea>
+          <span id="note" class="alert-danger" style="display: none">Panjang Karakter min.30 Karakter</span>
+        </div>
+      </div>
+      <div class="row pb-1">
+        <div class="col-md-2"></div>
+        <div class="col-md-6">
+          <button id="btndaftar" type="button" class="form-control btn btn-primary">Daftar</button>
+        </div>
+      </div>
+    </form>
+    <div class="row">
+      <div class="col-md-12">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Kode</th>
+              <th>Nama</th>
+              <th>Tempat/Tanggal Lahir</th>
+              <th>Email</th>
+              <th>Jenis Kelamin</th>
+              <th>Alamat</th>
+            </tr>
+          </thead>
+          <tbody id="rows_tabel"></tbody>
+        </table>
+      </div>
+    </div>
+    <!-- letakkan link ke file javascript disini -->
+    <script src="javascript/main.js"></script>
+    <script src="javascript/daftar.js"></script>
+  </body>
+</html>

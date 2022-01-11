@@ -1,0 +1,128 @@
+html,
+body {
+  /* 1 */
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  font-family: "Courier New", Courier, monospace; /*1*/
+  background-color: aliceblue;
+  line-height: 2; /*untuk jarak antar baris paragraf*/
+  padding-bottom: 900px;
+}
+
+/*2*/
+.container1 {
+  width: 800px;
+  margin: 20px auto;
+  background-color: azure;
+  padding: 20px;
+  /*untuk mengatur agar ukuran width tidak ikut berubah ketika ditambahkan padding*/
+  box-sizing: border-box;
+  /* ini property flexbox */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; /*susunan items bentuk horizontal*/
+}
+
+/*3*/
+.colutama {
+  flex: 3; /*lebar konten items*/
+  order: 2; /*urutan tata letak sebuah items*/
+  padding-right: 20px;
+}
+.sidebar1 {
+  flex: 1;
+  order: 1;
+}
+.sidebar2 {
+  flex: 1;
+  order: 3;
+}
+/* 4 */
+.container2 {
+  width: 800px;
+  margin: 50px auto;
+  /* display: flex;
+  justify-content: space-between; */
+}
+.service {
+  /* width: 30%; */
+  padding: 10px;
+  box-sizing: border-box;
+}
+.service.satu {
+  background-color: bisque;
+}
+.service.dua {
+  background-color: rgb(174, 238, 165);
+}
+.service.tiga {
+  background-color: rgb(248, 134, 242);
+}
+/* 5 Responsive, dengan Media Query*/
+@media (max-width: 800px) {
+  /*jika layar perangkat <800px maka akan menjalankan style dibawah ini*/
+  .container1 {
+    flex-direction: column;
+    background-color: cyan;
+  }
+}
+@media (min-width: 600px) {
+  .container2 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .service {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+}
+
+/* 6 */
+.container3 {
+  width: 800px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.view_img {
+  width: 50%;
+}
+.view_img img {
+  width: 25%;
+}
+/* 7 
+@media (min-width: 600px) {
+.view_img {
+  width: 25%;
+}
+}
+*/
+
+/* 8 */
+.navbar {
+  background-color: rgb(18, 65, 105);
+  width: 100%;
+  position: fixed;
+  top: 0px;
+}
+.navbar ul {
+  width: 800px;
+  list-style-type: none;
+  margin: 0px auto;
+  padding: 0;
+  overflow: hidden;
+}
+.navbar li {
+  margin: 0px auto;
+  float: left;
+  padding: 0px 2px 0px 2px;
+  line-height: 2;
+}
+.navbar li a {
+  background-color: rgb(98, 253, 106);
+  color: brown;
+  padding: 10px;
+}

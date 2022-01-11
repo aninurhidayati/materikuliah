@@ -1,0 +1,43 @@
+.container {
+  /*display: flex;  atau inline-flex */
+  width: 800px;
+  /* height: 200px; */
+  border: 5px solid steelblue;
+  margin: 30px auto; /*otomatis posisi akan ditengah*/
+  padding: 7px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+/*untuk mengatur container menyesuaikan tinggi items*/
+/* .container::after {
+  content: "";
+  display: block;
+  clear: both;
+} */
+.container div {
+  width: 150px;
+  height: 150px;
+  background-color: aqua;
+  margin: 2px;
+  /*float: left; agar posisi otomatis horizontal*/
+}
+.container div.box1 {
+  font-size: 40px;
+}
+.box1 {
+  order: 2;
+  flex-grow: 5;
+}
+.box2 {
+  order: 4;
+}
+.box3 {
+  order: 1;
+  flex-grow: 2;
+}
+.box4 {
+  order: 2;
+}

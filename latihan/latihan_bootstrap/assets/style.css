@@ -1,0 +1,11 @@
+.font-1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: oblique;
+}
+.bg-1 {
+  background-color: azure;
+}
+.iconstyle {
+  font-size: 26px;
+  color: rgb(255, 255, 255);
+}
