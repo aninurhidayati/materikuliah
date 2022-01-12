@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bootstrap/style.css" />
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- buat tampilan form disini -->
+    <h4>Quis Online</h4>
+    <form action="#">
+      <div class="row">
+        <div class="col-md-3">Soal-1</div>
+        <div class="col-md-6">
+          <input class="form-check-input" type="radio" name="soal1" id="soal1" value="90" onclick="hitungquis(this.value);" />
+          <span class="pe-2"> Pilihan-1</span>
+          <input class="form-check-input" type="radio" name="soal1" id="soal1" value="70" onclick="hitungquis(this.value);" />
+          <span class="pe-2"> Pilihan-2</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">Soal-2</div>
+        <div class="col-md-6">
+          <input class="form-check-input" type="radio" name="soal2" id="soal2" value="90" onclick="hitungquis(this.value);" />
+          <span class="pe-2"> Pilihan-1</span>
+          <input class="form-check-input" type="radio" name="soal2" id="soal2" value="70" onclick="hitungquis(this.value);" />
+          <span class="pe-2"> Pilihan-2</span>
+        </div>
+      </div>
+    </form>
+    <!-- letakkan link ke file javascript disini -->
+    <script src="javascript/main.js"></script>
+    <script src="javascript/quis.js"></script>
+  </body>
+</html>

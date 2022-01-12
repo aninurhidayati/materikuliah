@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Penjualan</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bootstrap/style.css" />
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- buat tampilan form disini -->
+    <h4>Form Penjualan</h4>
+    <form action="#">
+      <div class="row pb-1">
+        <label for="nama" class="col-md-2 form-label">Nama Barang</label>
+        <div class="col-md-3">
+          <select name="namabarang" id="namabarang" class="form-select"></select>
+        </div>
+      </div>
+      <div class="row pb-1">
+        <label for="" class="col-md-2 form-label">Harga Barang</label>
+        <div class="col-md-3">
+          <input type="text" name="hargabrg" id="hargabrg" class="form-control" readonly />
+        </div>
+      </div>
+      <div class="row pb-1">
+        <label for="" class="col-md-2 form-label">QTY</label>
+        <div class="col-md-1">
+          <input type="number" name="qty" id="qty" class="form-control" />
+        </div>
+      </div>
+      <div class="row pb-1">
+        <label for="" class="col-md-2 form-label">Total</label>
+        <div class="col-md-2">
+          <input type="text" name="total" id="total" class="form-control" readonly />
+        </div>
+      </div>
+      <div class="row pb-1">
+        <label for="" class="col-md-2 form-label">Diskon</label>
+        <div class="col-md-2">
+          <input type="text" name="diskon" id="diskon" class="form-control" readonly />
+        </div>
+      </div>
+      <div class="row pb-1">
+        <label for="" class="col-md-2 form-label">Bayar</label>
+        <div class="col-md-2">
+          <input type="text" name="bayar" id="bayar" class="form-control" />
+        </div>
+      </div>
+      <div class="row pb-1">
+        <label for="" class="col-md-2 form-label">Kembaian</label>
+        <div class="col-md-2">
+          <input type="text" name="kembalian" id="kembalian" class="form-control" readonly />
+        </div>
+      </div>
+    </form>
+
+    <!-- letakkan link ke file javascript disini -->
+    <script src="javascript/main.js"></script>
+    <script src="javascript/latihan.js"></script>
+  </body>
+</html>
