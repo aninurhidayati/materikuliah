@@ -21,8 +21,7 @@ combo_barang.onchange = function () {
   //ketika element combobarang di pilih valuenya, maka form harga diisi sesuai value combobox barang
   harga.value = combo_barang.value;
 };
-
-let qty = document.getElementById("qty");
+//let qty = document.getElementById("qty");
 let total = document.getElementById("total");
 let diskon = document.getElementById("diskon");
 //ketika qty diinput maka, otomatis menghitung diskon
@@ -34,7 +33,6 @@ qty.onchange = function () {
     diskon.value = 0;
   }
 };
-
 let jmlbayar = document.getElementById("bayar");
 //ketika form bayar, maka otomatis akan menghitung kembalian
 jmlbayar.onkeyup = function () {
