@@ -1,0 +1,15 @@
+1)apakah perbedaan client side dan server side? sulthan (7)
+2)apakah web server itu? putra (8)
+3)Cara Penulisan Kode PHP ada berapa cara, sebutkan 2 saja? adit (9)
+4)Script atau kode untuk menampilkan output pada PHP? berikan contohnya! ardi (8)
+5)Bagaimana cara mendeklarasikan variabel pada PHP? agung (8)
+6)Bolehkah deklarasi variabel diawali dengan angka 
+  dan tuliskan contoh variabel dengan nilai string?! galang
+7)Tuliskan rumus aritmatika hasil 9 pangkat 3 dalam kode php? putra
+8)Apakah Perbedaan http dan https? agung(6),adit(5)
+9)Sebutkan jenis-jenis webserver?! ardi(8) 
+10)Apakah apache itu? sulthan (7)
+11)tuliskan contoh variabel dengan nilai float, dan
+   cara menampilkan outputnya!! adit (10)
+12)buat variabel angka dengan value 90, kemudian tampilkan
+   pada form input text!! galang (9)
